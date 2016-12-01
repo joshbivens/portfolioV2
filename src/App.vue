@@ -1,38 +1,28 @@
 <template>
   <div id="app">
-    <h1>{{ msg }}</h1>
-    <p>
-      <router-link to="/foo">Go to Foo</router-link>
-      <router-link to="/bar">Go to Bar</router-link>
-    </p>
+    <h1>Josh Bivens | Portfolio</h1>
+    <ul>
+      <li><router-link to="/projects">Projects</router-link></li>
+      <li><router-link to="/contact">Contact</router-link></li>
+    </ul>
     <router-view></router-view>
   </div>
 </template>
 
 <script>
   export default {
-    name: 'app',
-    data() {
-      return {
-        msg: 'Vue Router TEST!'
-      }
-    }
+    name: 'app'
   }
 </script>
 
 <style>
+  @import url('https://fonts.googleapis.com/css?family=Roboto');
+  @import url('../node_modules/milligram/dist/milligram.min.css');
+
   #app {
-    font-family: 'Helvetica';
     text-align: center;
     margin-top: 100px;
+    font-family: "Roboto";
   }
-
-  button {
-    padding: 10px 15px;
-    border: 0;
-    border-radius: 4px;
-    background: tomato;
-    color: #fff;
-    font-size: 1.2em;
-  }
+  
 </style>
